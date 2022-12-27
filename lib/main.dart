@@ -1,4 +1,5 @@
 import 'package:animations/extentions/navigation_ext.dart';
+import 'package:animations/ui/drag_and_drop.dart';
 import 'package:animations/ui/drag_gesture.dart';
 import 'package:animations/ui/long_press.dart';
 import 'package:animations/ui/on_double_tap.dart';
@@ -69,6 +70,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   title: 'Drag',
                   onPressed: () {
                     context.navigateTo(const DragGesture());
+                  }),
+              ProjButton(
+                  title: 'Drag and Drop',
+                  onPressed: () {
+                    context.navigateTo(const DragAndDrop());
                   }),
               ProjButton(
                   title: 'On Long Tap',
